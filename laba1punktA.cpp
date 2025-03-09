@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 using namespace std;
 int main() { // Задание 1. Пункт а.
@@ -25,15 +24,14 @@ int main() { // Задание 1. Пункт а.
 	
 	// Вычисление параметров
 	double perimeter = 2 * (side_a + side_b); // Подсчёт периметра
-	double square = side_a * side_b; // Подсчёт площади
+	double area = side_a * side_b; // Подсчёт площади
 	double diagonal = sqrt(side_a * side_a + side_b * side_b); // Подсчёт диагонали
 	
-	cout << fixed << setprecision(3); // Установка трех знаков после запятой
 	
 	// Вывод результата
 	cout << "Результат: " << endl 
 	<< "Периметр: " << perimeter << " (см)" << endl 
-	<< "Площадь: " << square << " (см²)" << endl 
+	<< "Площадь: " << area << " (см²)" << endl 
 	<< "Диагональ: " << diagonal << " (см)" << endl;
 	return 0;
 }
